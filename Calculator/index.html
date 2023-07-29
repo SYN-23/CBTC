@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic_Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="input-Container">
+    <div class="grid-Container">
+        <input class="inputNumber grid-item1" id="input" type="text" disabled="true" placeholder="0">
+        
+        <button class="grid-item" onclick="clickClear()">C</button>
+        <button class="grid-item" onclick="clickBack()">back</button>
+        <button class="grid-item" onclick="btnClick('%')">%</button>
+        <button class="grid-item" onclick="btnClick('/')">/</button>
+
+        <button class="grid-item" onclick="btnClick(7)">7</button>
+        <button class="grid-item" onclick="btnClick(8)">8</button>
+        <button class="grid-item" onclick="btnClick(9)">9</button>
+        <button class="grid-item" onclick="btnClick('*')">x</button>
+        
+        
+        <button class="grid-item" onclick="btnClick(4)">4</button>
+        <button class="grid-item" onclick="btnClick(5)">5</button>
+        <button class="grid-item" onclick="btnClick(6)">6</button>
+        <button class="grid-item" onclick="btnClick('-')">-</button>
+
+        <button class="grid-item" onclick="btnClick(1)">1</button>
+        <button class="grid-item" onclick="btnClick(2)">2</button>
+        <button class="grid-item" onclick="btnClick(3)">3</button> 
+        <button class="grid-item" onclick="btnClick('+')">+</button>
+
+        <!-- <button class="grid-item">+/-</button> -->
+        <button class="grid-item" onclick="btnClick(0)">0</button>
+        <button class="grid-item" onclick="btnClick('.')">.</button> 
+        <button class="grid-item2" onclick="equal()">=</button>
+    </div>
+    </div>
+
+
+    <script src="calculator.js"></script>
+</body>
+</html>
